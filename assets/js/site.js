@@ -72,7 +72,9 @@
       var firstBad = validate();
       if (firstBad) { firstBad.focus(); return; }
       // The hidden field is invisible to people, so only automated submissions fill it.
-      if (form.elements.company && form.elements.company.value) {
+      var hpName = form.getAttribute("netlify-honeypot") || "company";
+      var hp = form.elements[hpName];
+      if (hp && hp.value) {
         showStatus("error", "We couldn't send that.", "Please reload the page and try again.");
         return;
       }
@@ -82,7 +84,7 @@
       }
       var body = new URLSearchParams();
       Array.prototype.forEach.call(form.elements, function (el) {
-        if (!el.name || el.name === "company") return;
+        if (!el.name || el.name === hpName) return;
         body.append(el.name, String(el.value).trim().slice(0, 1000));
       });
       submit.disabled = true;
@@ -92,7 +94,7 @@
         .then(function (res) {
           if (!res.ok) throw new Error("HTTP " + res.status);
           form.reset();
-          showStatus("ok", "You're on the list.", "We'll email you when early access opens.");
+          showStatus("ok", form.dataset.okTitle || "You're on the list.", form.dataset.okDetail || "We'll email you when early access opens.");
         }).catch(function () {
           showStatus("error", "We couldn't send that.", "Check your connection and try again.");
         }).then(function () {

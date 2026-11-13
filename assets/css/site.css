@@ -714,3 +714,27 @@ button.tile-idea:hover, button.tile-idea:focus-visible { border-color: rgba(242,
 @media (max-width: 860px) { .trailer-grid { grid-template-columns: 1fr; } }
 
 .site-footer .legal { display: block; flex-basis: 100%; margin-top: 0.75rem; opacity: 0.6; font-size: 0.75rem; line-height: 1.5; max-width: 60rem; }
+
+/* v17: For companies page (calm, no sunset) */
+.biz-hero { padding-block: clamp(4rem, 10vw, 7.5rem) clamp(2.5rem, 6vw, 4rem); border-bottom: 1px solid var(--line); background: radial-gradient(80% 120% at 85% 0%, rgba(176, 124, 255, 0.07), transparent 60%); }
+.biz-hero-inner { display: grid; gap: 1.4rem; justify-items: start; max-width: 52rem; }
+.biz-hero h1 { font-size: var(--step-4); letter-spacing: -0.045em; max-width: 16ch; }
+.biz-hero .lede { font-size: clamp(1.0625rem, 0.95rem + 0.45vw, 1.25rem); color: var(--ink-2); max-width: 40rem; line-height: 1.55; }
+.biz-hero .actions { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; }
+.biz-steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+.biz-steps li { border-top: 1px solid var(--line-2); padding-top: 1.1rem; display: grid; gap: 0.5rem; align-content: start; }
+.biz-steps .n { font-family: var(--font-mono); font-size: 0.75rem; color: var(--ink-2); letter-spacing: 0.08em; }
+.biz-steps p { color: var(--ink-2); }
+.grades { margin: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+.grades > div { border: 1px solid var(--line); border-radius: 14px; padding: 1.25rem; display: grid; gap: 0.6rem; background: rgba(255,255,255,0.015); }
+.grades dt { margin: 0; }
+.grades dd { margin: 0; color: var(--ink-2); }
+.g { display: inline-flex; align-items: center; gap: 0.45rem; font-weight: 600; }
+.g::before { content: ""; width: 9px; height: 9px; border-radius: 50%; background: currentColor; }
+.g1 { color: #7EE2A8; } .g2 { color: #A6E9EE; } .g3 { color: #FFD166; } .g4 { color: #F59BA8; }
+.case { display: flex; justify-content: space-between; align-items: end; gap: 2rem; flex-wrap: wrap; border: 1px solid var(--line-2); border-radius: 18px; padding: clamp(1.5rem, 4vw, 2.5rem); background: linear-gradient(135deg, rgba(242,155,196,0.06), rgba(166,233,238,0.04)); }
+.case > div { display: grid; gap: 0.8rem; max-width: 40rem; }
+.case .display { font-size: clamp(1.6rem, 1.2rem + 1.6vw, 2.4rem); }
+.case p { color: var(--ink-2); }
+@media (max-width: 860px) { .biz-steps { grid-template-columns: 1fr 1fr; } .grades { grid-template-columns: 1fr; } }
+@media (max-width: 520px) { .biz-steps { grid-template-columns: 1fr; } }
