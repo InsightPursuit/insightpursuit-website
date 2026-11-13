@@ -1,0 +1,82 @@
+{
+  "status": "approved",
+  "kind": "revision",
+  "title": "GTA VI release timing",
+  "retrievedOn": "2026-10-23",
+  "historicalNote": "Historical saved example. Dates reflect the announcements as retained on 23 Oct 2026. They were not rechecked for this page and are not a current release date.",
+  "question": "What GTA VI release timing did the supplied dated company announcements support, and how did later supplied evidence revise the historical baseline?",
+  "evidence": [
+    {
+      "id": "e1",
+      "date": "2025-05-02",
+      "publisher": "Take-Two Interactive, investor relations",
+      "title": "Announces a planned release on 26 May 2026, replacing the earlier Fall 2025 window.",
+      "url": "https://www.take2games.com/ir/news/take-two-interactive-software-inc-reiterates-expectations"
+    },
+    {
+      "id": "e2",
+      "date": "2025-05-02",
+      "publisher": "Take-Two Interactive, investor relations",
+      "title": "Second capture of the same announcement.",
+      "duplicateOf": "e1",
+      "note": "Kept for historical context. Not an independent source."
+    },
+    {
+      "id": "e3",
+      "date": "2026-06-24",
+      "publisher": "Rockstar Games, hosted on Take-Two investor relations",
+      "title": "Pre-order announcement stating a 19 November 2026 launch.",
+      "url": "https://www.take2games.com/ir/news/rockstar-games-announces-pre-orders-grand-theft-auto-vi"
+    }
+  ],
+  "findings": [
+    {
+      "id": "f1",
+      "label": "First finding",
+      "basedOn": [
+        "e1",
+        "e2"
+      ],
+      "asOf": "2025-05-02",
+      "target": "2026-05-26",
+      "statement": "The May 2025 announcement supported a planned release on 26 May 2026.",
+      "context": "On its own, the May 2025 announcement pointed to a spring 2026 release. Anyone planning content around it would have used that date."
+    },
+    {
+      "id": "f2",
+      "label": "Revised finding",
+      "basedOn": [
+        "e3"
+      ],
+      "asOf": "2026-06-24",
+      "target": "2026-11-19",
+      "statement": "The later June 2026 announcement supported launch timing of 19 November 2026."
+    }
+  ],
+  "inference": "Treating the November date as replacing the May date is an inference, and the record labels it as one. The first finding is kept as dated history rather than deleted.",
+  "disposition": "Supported",
+  "review": "Both findings were reviewed and approved by a person before being saved.",
+  "limits": [
+    "Both announcements came from the same company's website.",
+    "Three captures covered only two distinct articles.",
+    "The first pass read only the first 4,000 bytes of each capture. The full pages were reviewed afterwards.",
+    "It did not establish whether other announcements came in between, or survey wider coverage.",
+    "It does not guarantee an actual release date.",
+    "Value to creators, such as earnings or time saved, was not measured."
+  ],
+  "applicationsNote": "Illustrative. These ideas were not produced by this investigation.",
+  "applications": [
+    {
+      "title": "Plan around the stated date",
+      "text": "Schedule launch coverage from the latest official statement, and revisit the plan when that statement changes."
+    },
+    {
+      "title": "Label old dates as history",
+      "text": "When a video or post mentions the earlier May date, say it was the plan at the time, so viewers aren't misled."
+    },
+    {
+      "title": "Catch outdated content",
+      "text": "Content still citing an old date can be a gap for an accurate, sourced update."
+    }
+  ]
+}
