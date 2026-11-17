@@ -33,10 +33,10 @@
     });
   }
 
-  // Sign-up forms (any form with data-netlify). Email is the only required field,
+  // Sign-up forms (any form with data-ip-form; Netlify strips data-netlify from served HTML). Email is the only required field,
   // plus "I'm a" where a form asks for it.
   var EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  Array.prototype.forEach.call(document.querySelectorAll("form[data-netlify]"), function (form) {
+  Array.prototype.forEach.call(document.querySelectorAll("form[data-ip-form]"), function (form) {
     var statusEl = form.querySelector(".form-status");
     var submit = form.querySelector("button[type=submit]");
 
@@ -72,7 +72,7 @@
       var firstBad = validate();
       if (firstBad) { firstBad.focus(); return; }
       // The hidden field is invisible to people, so only automated submissions fill it.
-      var hpName = form.getAttribute("netlify-honeypot") || "company";
+      var hpName = form.getAttribute("data-hp") || "company";
       var hp = form.elements[hpName];
       if (hp && hp.value) {
         showStatus("error", "We couldn't send that.", "Please reload the page and try again.");
