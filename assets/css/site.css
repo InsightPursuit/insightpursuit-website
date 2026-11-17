@@ -738,3 +738,8 @@ button.tile-idea:hover, button.tile-idea:focus-visible { border-color: rgba(242,
 .case p { color: var(--ink-2); }
 @media (max-width: 860px) { .biz-steps { grid-template-columns: 1fr 1fr; } .grades { grid-template-columns: 1fr; } }
 @media (max-width: 520px) { .biz-steps { grid-template-columns: 1fr; } }
+
+/* v18: About page mission block */
+.mission-inner { display: grid; gap: 1rem; max-width: 46rem; }
+.mission .display { font-size: clamp(1.6rem, 1.15rem + 1.9vw, 2.6rem); line-height: 1.12; }
+.mission p { color: var(--ink-2); font-size: 1.0625rem; line-height: 1.6; }
