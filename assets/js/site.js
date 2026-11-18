@@ -157,5 +157,7 @@
   if (days > 1) el.textContent = days + ' days to launch · 19 Nov 2026';
   else if (days === 1) el.textContent = 'Launches tomorrow · 19 Nov 2026';
   else if (days === 0) el.textContent = 'Launch day · 19 Nov 2026';
-  else el.textContent = 'Launched 19 Nov 2026';
+  else el.textContent = 'Out now · launched 19 Nov 2026';
+  // After launch, swap pre-launch copy for its data-after version.
+  if (days <= 0) Array.prototype.forEach.call(document.querySelectorAll('[data-after]'), function (n) { n.textContent = n.getAttribute('data-after'); });
 })();
