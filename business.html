@@ -46,7 +46,8 @@
 
 <main id="main">
   <section class="biz-hero" aria-labelledby="hero-title">
-    <div class="wrap"><div class="biz-hero-inner">
+    <div class="biz-bg" aria-hidden="true"><div class="aurora a1"></div><div class="aurora a2"></div><div class="aurora a3"></div><div class="biz-grid"></div></div>
+    <div class="wrap biz-hero-grid"><div class="biz-hero-inner">
       <span class="label">For companies</span>
       <h1 id="hero-title" class="display">Research that separates confirmed facts from open questions.</h1>
       <p class="lede">When a story moves fast, the facts get mixed up with leaks, rumours and old news. We check each claim against its sources, grade how solid it is, and tell you when it changes.</p>
@@ -54,10 +55,22 @@
         <a class="btn btn-primary" href="#contact">Talk to us <span class="arrow" aria-hidden="true">→</span></a>
         <a class="btn btn-link" href="#method">How we work <span class="arrow" aria-hidden="true">→</span></a>
       </div>
-    </div></div>
+    </div>
+    <figure class="brief" aria-label="Illustration of a claims brief">
+      <div class="brief-bar"><span class="lights" aria-hidden="true"><i></i><i></i><i></i></span><span class="brief-title">Claims brief</span><span class="tag tag-concept">Illustration</span></div>
+      <ul class="brief-list">
+        <li><span class="c">Launch date</span><span class="g g1">Official</span></li>
+        <li><span class="c">Feature shown in a trailer</span><span class="g g2">Seen in official material</span></li>
+        <li><span class="c">Figure quoted in the press</span><span class="g g3">Reported</span></li>
+        <li><span class="c">Leaked screenshot</span><span class="g g4">Unverified</span></li>
+      </ul>
+      <div class="brief-foot"><span>Changed since last brief</span><b>1 claim upgraded</b></div>
+      <figcaption>Example layout only. Not a real brief or real results.</figcaption>
+    </figure>
+    </div>
   </section>
 
-  <section class="section" id="method" aria-labelledby="method-title">
+  <section class="section biz-band" id="method" aria-labelledby="method-title">
     <div class="wrap">
       <div class="section-head">
         <span class="label">How we work</span>
@@ -72,7 +85,7 @@
     </div>
   </section>
 
-  <section class="section" id="grades" aria-labelledby="grades-title">
+  <section class="section biz-band-2" id="grades" aria-labelledby="grades-title">
     <div class="wrap">
       <div class="section-head">
         <span class="label">How we grade</span>
@@ -101,7 +114,7 @@
     </div>
   </section>
 
-  <section class="section" id="contact" aria-labelledby="contact-title">
+  <section class="section biz-contact" id="contact" aria-labelledby="contact-title">
     <div class="wrap access">
       <div class="section-head">
         <span class="label">Contact</span>
