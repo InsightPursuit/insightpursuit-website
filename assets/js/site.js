@@ -134,6 +134,14 @@
 
 // Trailer: load YouTube only when someone presses play.
 (function () {
+  // Sharp thumbnail first; YouTube returns a 120px placeholder when maxres is missing.
+  Array.prototype.forEach.call(document.querySelectorAll('img[data-fallback]'), function (img) {
+    var swapped = false;
+    function swap() { if (swapped) return; swapped = true; img.src = img.dataset.fallback; }
+    function check() { if (img.naturalWidth && img.naturalWidth < 400) swap(); }
+    img.addEventListener('load', check); img.addEventListener('error', swap);
+    if (img.complete) check();
+  });
   Array.prototype.forEach.call(document.querySelectorAll('[data-yt]'), function (btn) {
     btn.addEventListener('click', function () {
       var f = document.createElement('iframe');

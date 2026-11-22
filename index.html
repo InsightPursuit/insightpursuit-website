@@ -9,9 +9,11 @@
 <link rel="canonical" href="https://insightpursuit.com/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Creator Radar for GTA VI">
-<meta property="og:description" content="Know what's true, and what to do next. Starting with GTA VI.">
+<meta property="og:description" content="Find the GTA VI stories worth covering, checked against official sources. Get early access.">
 <meta property="og:url" content="https://insightpursuit.com/">
-<meta property="og:image" content="https://insightpursuit.com/assets/brand/og-image.png">
+<meta property="og:image" content="https://insightpursuit.com/assets/brand/og-gta6.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0A0714">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -36,29 +38,33 @@
     </a>
     <button class="btn btn-quiet btn-sm nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
     <nav class="nav" id="site-nav" aria-label="Main">
-      <a href="#trailer">GTA VI</a>
+      <a href="#radar">Creator Radar</a>
       <a href="#how">How it works</a>
       <a href="#demo">Real example</a>
       <a href="company.html">About us</a>
       <a href="business.html">For companies</a>
-      <a class="btn btn-primary btn-sm" href="#access">Join the waitlist</a>
+      <a class="btn btn-primary btn-sm" href="#access">Get early access</a>
     </nav>
   </div>
 </header>
 
 <main id="main">
-  <section class="hero hero-split hero-launch" aria-labelledby="hero-title">
+  <section class="hero hero-gta" aria-labelledby="hero-title">
     <div class="hero-bg" aria-hidden="true">
       <div class="vc-sky"></div>
       <svg class="vc-sun" viewBox="0 0 400 200"><defs><linearGradient id="vcs" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFC27A"/><stop offset="1" stop-color="#FF4F9A"/></linearGradient><mask id="vcm"><rect width="400" height="200" fill="#fff"/><rect y="120" width="400" height="6" fill="#000"/><rect y="140" width="400" height="8" fill="#000"/><rect y="162" width="400" height="10" fill="#000"/><rect y="184" width="400" height="12" fill="#000"/></mask></defs><circle cx="200" cy="200" r="190" fill="url(#vcs)" mask="url(#vcm)"/></svg>
       <svg class="vc-city" viewBox="0 0 1200 160" preserveAspectRatio="xMidYMax slice"><path fill="#0B0614" d="M0 160V118h40V96h26v12h30V70h22v20h34V46h18v30h28V64h40v38h30V80h24v52h36v-16h28v28h44V86h20V62h18v30h30v48h40v-20h30V82h24v26h26V56h14V40h16v22h14v48h34v-30h28v20h36V68h22v22h30v-18h34v46h30v-28h26v16h40V78h18v20h30v34h28v-22h32v30h40v-16h30v28h36v-14h60V160Z"/><g fill="#0B0614"><path d="M120 160 L127 52 L133 52 L139 160Z"/><path d="M130 54 q-40 -10 -70 14 q34 -4 70 -8z M130 54 q36 -16 72 4 q-36 -2 -72 2z M130 54 q-18 -30 -52 -36 q30 14 48 40z M130 54 q20 -30 54 -32 q-30 12 -50 36z"/><path d="M1080 160 L1086 70 L1092 70 L1097 160Z"/><path d="M1089 72 q-38 -10 -66 12 q32 -4 66 -8z M1089 72 q34 -14 68 4 q-34 -2 -68 2z M1089 72 q-16 -28 -48 -34 q28 12 44 38z M1089 72 q18 -28 50 -30 q-28 12 -46 34z"/></g></svg>
     </div>
-    <div class="wrap split-grid">
-      <div class="split-copy">
-        <span class="hero-pill"><span class="tag tag-live">GTA VI</span><span id="countdown">Launch day: 19 Nov 2026</span></span>
-        <h1 id="hero-title" class="display">Make the right GTA&nbsp;VI video at the right time.</h1>
-        <p class="lede">Creator Radar watches Rockstar, the news and other creators, checks every story against its sources, and tells you what's worth making, why now, and how crowded it is.</p>
-        <p class="tagline">You make the content. We watch everything else.</p>
+    <div class="wrap gta-grid">
+      <div class="gta-copy">
+        <span class="hero-pill"><span class="tag tag-live">GTA VI</span><span>Out now on PS5 and Xbox Series X|S</span></span>
+        <h1 id="hero-title" class="display">Know which GTA&nbsp;VI video to make&nbsp;next.</h1>
+        <p class="lede">Creator Radar finds the GTA VI stories worth covering and checks them against official sources.</p>
+        <ul class="hits">
+          <li><span class="hit-ico" aria-hidden="true">⚡</span><span><b>What's new</b> the moment it drops</span></li>
+          <li><span class="hit-ico" aria-hidden="true">✓</span><span><b>What's confirmed</b>, not rumoured</span></li>
+          <li><span class="hit-ico" aria-hidden="true">◎</span><span><b>What nobody's covered</b> yet</span></li>
+        </ul>
         <form class="quick-form" name="waitlist" method="POST" data-netlify="true" netlify-honeypot="company" data-ip-form data-hp="company" novalidate>
           <input type="hidden" name="form-name" value="waitlist">
           <input type="hidden" name="place" value="hero">
@@ -67,15 +73,35 @@
           <div class="quick-row">
             <label class="sr-only" for="h-email">Email address</label>
             <input id="h-email" name="email" type="email" autocomplete="email" inputmode="email" required maxlength="254" placeholder="Your email">
-            <button class="btn btn-primary" type="submit">Join the waitlist</button>
+            <button class="btn btn-primary" type="submit">Get early access</button>
           </div>
           <div class="hp" aria-hidden="true"><label for="h-company">Leave this field empty</label><input id="h-company" name="company" type="text" tabindex="-1" autocomplete="off"></div>
           <div class="form-status" role="status" hidden></div>
-          <p class="quick-note">Free to join. One email when early access opens. <a href="privacy.html">Privacy</a></p>
+          <p class="quick-note">Free. One email when Creator Radar opens. <a href="privacy.html">Privacy</a></p>
         </form>
-        <a class="btn-link more" href="#demo">Or see a real example first <span class="arrow" aria-hidden="true">→</span></a>
       </div>
+      <figure class="video hero-video" id="trailer">
+        <button type="button" class="yt" data-yt="rz1B4B2yBZY" aria-label="Play the Grand Theft Auto VI Launch Trailer">
+          <img src="https://i.ytimg.com/vi/rz1B4B2yBZY/maxresdefault.jpg" data-fallback="https://i.ytimg.com/vi/rz1B4B2yBZY/sddefault.jpg" alt="" width="1280" height="720" fetchpriority="high">
+          <span class="yt-badge">Official launch trailer</span>
+          <span class="yt-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span>
+        </button>
+        <figcaption>Grand Theft Auto VI launch trailer by Rockstar Games, played from YouTube.</figcaption>
+      </figure>
+    </div>
+    <div class="wrap facts-strip" aria-label="GTA VI facts">
+      <span><b>Released</b> 19 Nov 2026</span><span><b>Platforms</b> PS5 · Xbox Series X|S</span><span><b>Setting</b> Vice City, Leonida</span><span class="src">Source: <a href="https://www.rockstargames.com/VI" target="_blank" rel="noopener">rockstargames.com/VI</a>, checked 21 Nov 2026</span>
+    </div>
+  </section>
 
+  <section class="section radar-show" id="radar" aria-labelledby="radar-title">
+    <div class="wrap radar-grid">
+      <div class="section-head">
+        <span class="label">What you'll see</span>
+        <h2 id="radar-title" class="display">One screen. The next video idea, with proof.</h2>
+        <p>Every idea comes with why it matters now and the sources behind it.</p>
+        <a class="btn-link more" href="#demo">See a real example <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
       <figure class="app" aria-labelledby="radar-caption">
         <div class="app-bar">
           <span class="lights" aria-hidden="true"><i></i><i></i><i></i></span>
@@ -121,35 +147,12 @@
     <p class="wrap app-caption" id="radar-caption">A preview of Creator Radar, which is still being built. The dates and sources are real, from research our system saved on 23 Oct 2026. The video idea shows the format you'll get.</p>
   </section>
 
-  <section class="section trailer" id="trailer" aria-labelledby="trailer-title">
-    <div class="wrap trailer-grid">
-      <div class="trailer-copy">
-        <span class="label">Welcome to Leonida</span>
-        <h2 id="trailer-title" class="display" data-after="GTA VI is out. The race for views has started.">The biggest launch in years. Be ready for it.</h2>
-        <p data-after="Every GTA creator is chasing the same few stories right now. Creator Radar shows you what's actually new, what's confirmed, and what nobody has covered yet.">When GTA VI lands, every creator will be chasing the same few stories. Creator Radar shows you what's actually new, what's confirmed, and what nobody has covered yet.</p>
-        <ul class="facts">
-          <li><span data-after="Released">Launch</span><b>19 Nov 2026</b></li>
-          <li><span>Platforms</span><b>PS5 · Xbox Series X|S</b></li>
-          <li><span>Setting</span><b>Vice City, Leonida</b></li>
-        </ul>
-        <p class="src">Source: <a href="https://www.rockstargames.com/VI" target="_blank" rel="noopener">rockstargames.com/VI</a>, checked 13 Nov 2026.</p>
-      </div>
-      <figure class="video">
-        <button type="button" class="yt" data-yt="rz1B4B2yBZY" aria-label="Play the Grand Theft Auto VI Launch Trailer">
-          <img src="https://i.ytimg.com/vi/rz1B4B2yBZY/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
-          <span class="yt-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span>
-        </button>
-        <figcaption>Official launch trailer by Rockstar Games, played from YouTube.</figcaption>
-      </figure>
-    </div>
-  </section>
-
   <section class="section" id="how" aria-labelledby="how-title">
     <div class="wrap">
       <div class="section-head">
         <span class="label">How it works</span>
         <h2 id="how-title" class="display">Less scrolling. More posting.</h2>
-        <p data-after="The GTA VI launch is burying everyone in news, leaks and rumours. Creator Radar sorts it out so you can spend your time making videos.">The GTA VI launch will bury you in news, leaks and rumours. Creator Radar sorts it out so you can spend your time making videos.</p>
+        <p>GTA VI news, leaks and rumours are everywhere. We sort it out so you can make videos.</p>
       </div>
       <div class="steps3 radar-steps">
         <div class="step"><span class="n">1</span><h3>We watch everything</h3><p>Rockstar and Take-Two announcements, news, trailers and what other GTA creators are posting.</p></div>
@@ -233,7 +236,7 @@
     <div class="wrap access access-quick">
       <div class="section-head">
         <span class="label">Early access</span>
-        <h2 id="access-title" class="display" data-after="Get early access.">Get in before launch.</h2>
+        <h2 id="access-title" class="display">Get early access.</h2>
         <p>Just your email. We'll send one message when Creator Radar opens, and use it for nothing else.</p>
       </div>
 
@@ -245,7 +248,7 @@
           <div class="quick-row">
             <label class="sr-only" for="a-email">Email address</label>
             <input id="a-email" name="email" type="email" autocomplete="email" inputmode="email" required maxlength="254" placeholder="Your email">
-            <button class="btn btn-primary" type="submit">Join the waitlist</button>
+            <button class="btn btn-primary" type="submit">Get early access</button>
           </div>
           <div class="hp" aria-hidden="true"><label for="a-company">Leave this field empty</label><input id="a-company" name="company" type="text" tabindex="-1" autocomplete="off"></div>
           <div class="form-status" role="status" hidden></div>
@@ -301,7 +304,7 @@
     </div>
     <div class="report-foot">
       <p>Built from real research our system saved on 23 Oct 2026, not rechecked since. Angles and titles are examples of the format. Creator Radar is still being built.</p>
-      <a class="btn btn-primary" href="#access" id="report-cta">Join the waitlist <span class="arrow" aria-hidden="true">→</span></a>
+      <a class="btn btn-primary" href="#access" id="report-cta">Get early access <span class="arrow" aria-hidden="true">→</span></a>
     </div>
   </div>
 </dialog>

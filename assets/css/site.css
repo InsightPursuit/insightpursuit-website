@@ -957,3 +957,34 @@ button.tile-idea:hover, button.tile-idea:focus-visible { border-color: rgba(242,
 .about #access { background: radial-gradient(60% 70% at 85% 60%, rgba(255,79,154,.08), transparent 70%); }
 .about #access .form { box-shadow: 0 30px 90px rgba(0,0,0,.45), 0 0 0 1px rgba(255,79,154,.12); }
 @media (prefers-reduced-motion: reduce) { .about .offer-card, .about .status-col { transition: none; } }
+
+/* v22 (22 Nov 2026): scannable GTA VI hero with the trailer up top, written by Claude */
+.hero-gta { position: relative; isolation: isolate; overflow: hidden; padding-bottom: clamp(9rem, 14vw, 11rem); }
+.gta-grid { display: grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1.15fr); gap: clamp(2rem, 4vw, 3.5rem); align-items: center; padding-block: clamp(2rem, 5vw, 4rem) 1.5rem; }
+.gta-copy { display: grid; gap: 1.25rem; justify-items: start; }
+.gta-copy h1 { font-size: clamp(2.5rem, 1.4rem + 3.6vw, 4.5rem); line-height: 1.02; letter-spacing: -0.045em; max-width: 13ch; }
+.gta-copy h1 { background: linear-gradient(180deg, #fff 45%, #FFC9DF); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.gta-copy .lede { font-size: clamp(1.0625rem, 1rem + .35vw, 1.25rem); color: var(--ink-2); max-width: 32rem; line-height: 1.5; }
+.hits { list-style: none; margin: 0; padding: 0; display: grid; gap: .55rem; }
+.hits li { display: flex; align-items: center; gap: .75rem; font-size: 1.0625rem; color: var(--ink-2); }
+.hits b { color: var(--ink); font-weight: 600; }
+.hit-ico { width: 2rem; height: 2rem; flex: none; border-radius: 10px; display: grid; place-items: center; font-size: .95rem; color: #1A0613; background: linear-gradient(135deg, #FF4F9A, #FFC27A); box-shadow: 0 6px 20px rgba(255,79,154,.3); }
+.hero-video { margin: 0; }
+.hero-video .yt { border-radius: 18px; box-shadow: 0 40px 120px rgba(255, 79, 154, .30), 0 0 0 1px rgba(255,255,255,.12), 0 0 0 8px rgba(255, 79, 154, .08); }
+.hero-video .yt-play { width: 92px; height: 92px; background: linear-gradient(135deg, #FF4F9A, #FFC27A); color: #1A0613; box-shadow: 0 10px 50px rgba(255,79,154,.55); }
+.yt-badge { position: absolute; left: 14px; top: 14px; z-index: 1; font-family: var(--font-mono); font-size: .6875rem; letter-spacing: .08em; text-transform: uppercase; padding: .4rem .65rem; border-radius: 999px; background: rgba(10, 6, 16, .72); color: #fff; border: 1px solid rgba(255,255,255,.18); backdrop-filter: blur(6px); }
+.facts-strip { display: flex; flex-wrap: wrap; gap: .5rem 1.75rem; align-items: center; font-size: .9375rem; color: var(--ink-2); padding-top: 1.25rem; position: relative; z-index: 1; }
+.facts-strip b { color: var(--ink); font-weight: 600; margin-right: .35rem; }
+.facts-strip .src { font-size: .8125rem; color: var(--ink-3); }
+.facts-strip .src a { color: inherit; }
+.radar-grid { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(2rem, 4vw, 4rem); align-items: center; }
+.radar-grid .section-head { margin-bottom: 0; }
+.radar-show { background: radial-gradient(60% 80% at 90% 40%, rgba(176,124,255,.07), transparent 70%); }
+@media (max-width: 900px) {
+  .gta-grid, .radar-grid { grid-template-columns: minmax(0, 1fr); }
+  .hero-video { order: -1; }
+  .hero-gta { padding-bottom: 7rem; }
+}
+.facts-strip { gap: .5rem; }
+.facts-strip > span { background: rgba(12, 8, 20, .78); border: 1px solid rgba(255,255,255,.1); border-radius: 999px; padding: .4rem .85rem; backdrop-filter: blur(6px); }
+.facts-strip .src { color: var(--ink-2); }
